@@ -1,0 +1,37 @@
+FUNCTION IntOf(dual: STRING): INTEGER;
+VAR								
+  result, i: INTEGER;
+BEGIN								
+  result := 0;						1 		1	
+  i := 1;							1 		1	
+ WHILE i <= Length(dual) DO BEGIN	u+1 	1+16+2=19	
+  result := result * 2;				u		3+1=4
+  IF dual[i] = '1' THEN				u		1+0.5=1.5
+    result := result + 1;			v 		2
+  i := i + 1;						u		2
+  END; (*WHILE*)							
+  IntOf := result;					1 		1
+END; (*IntOf*)						
+
+
+1+1+19(u+1)+4u+1.5u+2v+2u+1=22+26.5u+2v
+
+u=Länge einer Binärzahl
+v=Anzahl der darin enthaltenen Einsen
+
+100100=4+24*6+2*2=152
+100001=4+24*6+2*2=152
+110100=4+24*6+2*3=154
+1111  =4+24*4+2*4=108
+0000  =4+24*4+2*0=100
+1     =4+24*1+2*1=30
+0     =4*24*1+2*0=28
+
+
+
+Wertzuweisung: 1
+Vergleich: 1
+Indizierung: 0,5
+Addition,Subtraktion: 0,5
+Multiplikation: 3
+Prozeduraufruf: 16+2* Anzahl Parameter
